@@ -1,0 +1,5 @@
+﻿section { /*margin: 0px 10px;*/ }
+section.banner-home { width: 980px; }
+section.summary-ctr { max-width: 70%; }
+section.summary-ctr fieldset { width: auto; }
+section.summary-ctr .summary { margin: 0px auto; padding: 0px 20px; }

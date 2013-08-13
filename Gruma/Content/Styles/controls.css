@@ -1,0 +1,4 @@
+﻿select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input { margin: 0px; padding: 0px; border: 0px none;}
+label { display: inline-block; }
+img { padding: 2px; background-color: #ffffff; border: 1px solid #e4e4e4; }
+.breadcrumb { margin: 0px auto; border: 0px none; background: none; }

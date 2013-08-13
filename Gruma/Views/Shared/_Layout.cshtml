@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'/>
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        <link href="/Content/Styles/1024x768.css" rel="stylesheet" media="screen and (max-width: 1220px)" />         
+        
+    </head>
+    <body>
+    <header>
+        <div class="header-content">
+            <div class="header-left">
+                <ul>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Foodservice</a></li>
+                </ul>
+            </div>
+            <div class="header-logo">
+                <a href="Home">
+                    <img src="Content/Images/logo.png"/>
+                </a>
+            </div>
+            <div class="header-right">
+                <label>Search:</label>
+                <input type="text" />
+                <span class="submit"></span>
+               @* <div class="languaje dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Languaje</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="1">English</a></li>
+                    <li><a href="2">Spanish</a></li>
+                  </ul>
+                </div>*@
+                <select class="language" name="">
+                    <option>English</option>
+                    <option>Spanish</option>
+                </select>
+            </div>
+            
+            <nav>
+                @*<a class="active" href="#">HOME</a>*@
+                @Html.ActionLink("HOME","Index","Home", new { @class = "active" })
+                @Html.ActionLink("RECIPES","Index","Recipes")
+                @Html.ActionLink("NEWS","Index","News")
+                <a href="#"></a>
+                @Html.ActionLink("PRODUCTS","Index","Products")
+                @Html.ActionLink("ABOUT US","Index","About")
+                @Html.ActionLink("CONTACT US","Index","Contact")
+            </nav>
+        </div>
+       
+    </header>
+     <section class="breadcrumb">
+            <article>
+                <p>
+                    <a href="#">Home</a>
+                    
+                </p>
+            </article>
+        </section>    
+        <div id="body">
+            @RenderSection("featured", required: false)
+            @*<section class="content-wrapper main-content clear-fix">*@
+                @RenderBody()
+            @*</section>*@
+            <section>
+                <div id="my-mission">        
+                </div>    
+                @Html.Partial("MyMissionFoods")
+                <div id="shadow-mymission"></div>
+            </section>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <a href="#"><img src="Content/Images/footer-logo.png" alt="Mission Food"/></a>
+                <nav>
+                    <a href="#">RECIPES</a>
+                    <a href="#">HEALTHY TIPS</a>
+                    <a href="#">PRODUCTS</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#">CONTACT US</a>
+                    <a href="#">THE GRUMA FAMILY</a>
+                </nav>
+
+            </div>
+            <div class="footer-copyright">
+                <p>
+                    <a href="#">Terms &AMP; Conditions </a> | 
+                    <a href="#"> Privacy Policy </a>   <span>&bullet;</span><label>Copyright 2012 Mission Foods &COPY; Oceanía</label>
+                </p>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/plugins")
+        @Scripts.Render("~/bundles/scripts")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
