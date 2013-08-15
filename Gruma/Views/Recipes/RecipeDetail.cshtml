@@ -1,0 +1,101 @@
+﻿
+<section id="recipe-detail">               
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <h1>Fiesta Chicken and Black Bean Enchilada</h1>
+                    <div class="rating">
+                        <label>Rating:</label>
+                        <div id="get_calification_img">
+                            <p>
+                                <img src="~/Content/Images/rating4.png"/>
+                            </p>
+                        </div><!--set_calification-->
+                        <span class="fltLt">(287 Reviews)</span>
+                        <span class="fltLt">|</span>
+                        <a href="#" onclick="showLightbox('rate_recipe')" class="fltLt">Rate this Recipe</a>
+                        <span class="fltLt">|</span>
+                        <a href="#" onclick="showLightbox_scroll('reviews')" class="fltLt"> See Reviews</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid recipe-description">
+                <div class="span12">
+                    <p>These enchiladas have it all--shredded chicken, veggies, fresh cilantro, black beans, cheese, green chilies, sour cream--and make a hearty and satisfying family dinner.</p>
+                </div>
+            </div>
+            <!---------- toolkit ---------->
+            <div class="row-fluid recipe-toolkit">
+                <div class="span6">
+                    <div>
+                        <img src="~/Content/Images/toolkit1.jpg"/>
+                        <h3>Recipe Toolkit</h3>
+                        <ul>
+                            <li class="icn-print"><a href="#">Print this Recipe</a></li>
+                            <li class="icn-email"><a href="#" onclick="showLightbox('email_recipe')">Email this Recipe to a Friend</a></li>
+                            <li class="icn-save"><a href="#" onclick="showLightbox('member_login')">Save to my Recipe Book</a></li>
+                            <li class="icn-share clearfix"><a href="#">Share this Recipe</a><a class="fb" href="#"><img src="~/Content/Images/fb.png"/></a><a class="tw" href="#"><img src="~/Content/Images/tw.png"/></a> </li>
+
+                        </ul>
+                       @* <div class="sn">
+                            <p><a class="fb" href="#"><img src="~/Content/Images/fb.png"/></a><a class="tw" href="#"><img src="~/Content/Images/tw.png"/></a></p>
+                        </div>*@
+                        @*<p class="clearfix">
+                            <a href="#" class="fltLt"><img src="~/Content/Images/like.png"/></a>
+                            <span class="fltLt">31 people like this. Be the first of your friends.</span>
+                        </p>*@
+                        <div class="fb-like-box" data-href="https://www.facebook.com/pages/Mission-Foods/195539173816673?fref=ts" data-width="282" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>
+                        <script>(function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s); js.id = id;
+                                js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));
+                        </script>
+                        
+                    </div>
+                    <div class="related">
+                                <h2>You May Also Enjoy</h2>
+                                <div class="row-fluid">
+                                    <div class="span5">
+                                        <img src="~/Content/Images/related3.jpg"/>
+                                    </div>
+                                    <div class="span6">
+                                        <p><a href="#">Fresh Tortillas</a></p>
+                                        <p><label>Rating:</label><img src="~/Content/Images/rating4.png"/>
+                                        <span>(287 Reviews)</span></p>
+                                    </div>
+                                </div><!--End .related-recipe-->
+                                <div class="row-fluid">
+                                    <div class="span5">
+                                        <img src="~/Content/Images/related1.jpg"/>
+                                    </div>
+                                    <div class="span6">
+                                        <p><a href="#">Fresh Tortillas</a></p>
+                                        <p><label>Rating:</label><img src="~/Content/Images/rating5.png"/></p>
+                                        <p><span>(287 Reviews)</span></p>
+                                    </div>
+                                </div><!--End .related-recipe-->
+                                <div class="row-fluid">
+                                    <div class="span5">
+                                        <img src="~/Content/Images/related2.jpg"/>
+                                    </div>
+                                    <div class="span6">
+                                        <p><a href="#">Fresh and Green</a></p>
+                                        <p><label>Rating:</label><img src="~/Content/Images/rating3.png"/></p>
+                                        <p><span>(287 Reviews)</span></p>
+                                    </div>
+                                </div><!--End .related-recipe-->
+                            </div><!--End .related-->
+                </div>
+            </div>
+            <!------ End toolkit ----->
+            <div class="row-fluid">
+                <div class="span6">
+                    
+                </div>
+
+            </div>
+        </div>
+</section>

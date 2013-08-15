@@ -12,7 +12,7 @@ namespace Gruma
                         "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
-                        "~/Scripts/jquery-ui-{version}.js"));
+                        "~/Scripts/jquery-ui*"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.unobtrusive*",
@@ -25,14 +25,17 @@ namespace Gruma
                        "~/Scripts/Plugins/jquery.mCustomScrollbar.js",
                        "~/Scripts/Plugins/jquery.mousewheel.js",
                        "~/Scripts/Plugins/jquery-jcarousel.js",
-                       "~/Scripts/Plugins/jquery-jcarousel.min.js"));
+                       "~/Scripts/Plugins/jquery-jcarousel.min.js",
+                       "~/Scripts/Plugins/selectmenu.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                         "~/Scripts/Bootstrap/bootstrap.js",        
                         "~/Scripts/Bootstrap/bootstrap-dropdown.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/scripts").Include(
-                       "~/Scripts/Home/Home.js"));
+                       "~/Scripts/Home/Index.js",
+                       "~/Scripts/Recipes/Index.js",
+                       "~/Scripts/Shared/MyMissionFoods.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -42,10 +45,13 @@ namespace Gruma
             bundles.Add(new StyleBundle("~/Content/css").Include(                
                 "~/Content/Styles/Plugins/bootstrap.css",
                 "~/Content/Styles/Plugins/bootstrap-responsive.css",
+                "~/Content/Styles/Plugins/jquery.mCustomScrollbar.css",
+                "~/Content/Styles/Plugins/jquery.ui.selectmenu.css",
                 "~/Content/Styles/layout.css",
                 "~/Content/Styles/controls.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
+                        "~/Content/themes/base/jquery-ui-1.10.3.css",
                         "~/Content/themes/base/jquery.ui.core.css",
                         "~/Content/themes/base/jquery.ui.resizable.css",
                         "~/Content/themes/base/jquery.ui.selectable.css",

@@ -318,10 +318,14 @@
     <Content Include="Content\Images\ui-icons_888888_256x240_copy.png" />
     <Content Include="Content\Images\ui-icons_cd0a0a_256x240.png" />
     <Content Include="Content\Styles\1024x768.css" />
+    <Content Include="Content\Styles\Plugins\jquery.ui.selectmenu.css" />
+    <Content Include="Content\themes\base\jquery-ui-1.10.3.css" />
     <Content Include="Content\Styles\layout.css" />
     <Content Include="Content\Styles\Plugins\bootstrap-responsive.css" />
     <Content Include="Content\Styles\Plugins\bootstrap.css" />
     <Content Include="Content\Styles\controls.css" />
+    <Content Include="Content\Styles\Plugins\jquery.mCustomScrollbar.css" />
+    <Content Include="Content\Styles\Plugins\jquery.ui.autocomplete.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -394,11 +398,14 @@
     <Content Include="Scripts\Bootstrap\bootstrap-typeahead.js" />
     <Content Include="Scripts\Bootstrap\bootstrap.js" />
     <Content Include="Scripts\Bootstrap\bootstrap.min.js" />
-    <Content Include="Scripts\Home\Home.js" />
+    <Content Include="Scripts\Home\Index.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
-    <Content Include="Scripts\jquery-ui-1.10.3.js" />
-    <Content Include="Scripts\jquery-ui-1.10.3.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.23.js" />
+    <Content Include="Scripts\jquery-ui-1.8.23.min.js" />
+    <Content Include="Scripts\jquery-ui-autocomplete.js" />
+    <Content Include="Scripts\jquery-ui-combobox-coded.js" />
+    <Content Include="Scripts\jquery-ui-combobox.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
@@ -408,15 +415,15 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
-    <Content Include="Scripts\Plugins\jquery-ui-combobox-coded.js" />
-    <Content Include="Scripts\Plugins\jquery-ui-combobox.js" />
     <Content Include="Scripts\Plugins\jquery.jcarousel.js" />
     <Content Include="Scripts\Plugins\jquery.jcarousel.min.js" />
     <Content Include="Scripts\Plugins\jquery.mCustomScrollbar.js" />
     <Content Include="Scripts\Plugins\jquery.mousewheel.js" />
-    <Content Include="Scripts\Plugins\jquery.ui.selectmenu.js" />
+    <Content Include="Scripts\jquery.ui.selectmenu.js" />
     <Content Include="Scripts\Plugins\selectmenu.js" />
     <Content Include="Scripts\Plugins\slides.min.jquery.js" />
+    <Content Include="Scripts\Recipes\Index.js" />
+    <Content Include="Scripts\Shared\MyMissionFoods.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -458,6 +465,7 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\Shared\MyMissionFoods.cshtml" />
     <Content Include="Views\Recipes\Index.cshtml" />
+    <Content Include="Views\Recipes\RecipeDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

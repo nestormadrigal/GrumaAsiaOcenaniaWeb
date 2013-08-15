@@ -1,4 +1,16 @@
-﻿select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input { margin: 0px; padding: 0px; border: 0px none;}
+﻿a:hover { text-decoration: none; }
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input { margin: 0px; padding: 0px 5px; border: 0px none;}
 label { display: inline-block; }
-img { padding: 2px; background-color: #ffffff; border: 1px solid #e4e4e4; }
+img { padding: 2px; background-color: transparent; border: 1px solid #e4e4e4; }
 .breadcrumb { margin: 0px auto; border: 0px none; background: none; }
+.overlay { position: absolute; width: 100%; height: 100%; background: #000000; -webkit-opacity: 0.5; -moz-opacity: 0.5; filter:alpha(opacity=50); }
+
+/*select menu*/
+.header-right .ui-selectmenu { width: 75px !important; background: none; border: 0px none; color: #FFFFFF; }
+.header-right .ui-selectmenu span.ui-selectmenu-icon { background-image: url("../Images/ui-icons_888888_256x240_copy.png"); }
+.header-right a.ui-selectmenu:hover { color: #FFFFFF; }
+.ui-selectmenu-menu-popup { margin: 20px 0px 0px 0px; border: 0px none; -moz-border-radius: 0px; -webkit-border-radius: 0px; -khtml-border-radius: 0px; border-radius: 0px; }
+.ui-selectmenu-menu li { height: 25px; border: 0px none; }
+.ui-selectmenu-menu li a, .ui-selectmenu-status { padding: 0px 5px; }
+.ui-selectmenu-menu li:hover { background: #EDEDED; border: 0px none; -moz-border-radius: 0px; -webkit-border-radius: 0px; -khtml-border-radius: 0px; border-radius: 0px; text-decoration: none; list-style: none; }
+.ui-selectmenu-menu li:hover a { text-decoration: none; line-height: normal; } 

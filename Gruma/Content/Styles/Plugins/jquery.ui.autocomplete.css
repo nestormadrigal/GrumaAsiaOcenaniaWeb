@@ -1,5 +1,5 @@
 /*!
- * jQuery UI Autocomplete 1.8.20
+ * jQuery UI Autocomplete 1.8.23
  *
  * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
  * Licensed under the MIT license.
@@ -13,7 +13,7 @@
 * html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
 
 /*
- * jQuery UI Menu 1.8.20
+ * jQuery UI Menu 1.8.23
  *
  * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
  * Licensed under the MIT license.
@@ -48,7 +48,7 @@
 }
 .ui-menu .ui-menu-item a.ui-state-hover,
 .ui-menu .ui-menu-item a.ui-state-active {
-	font-weight: normal;
+	font-weight: bold;
 	margin: -1px;
 }
 
@@ -57,3 +57,4 @@
 .ui-combobox-toggle { top: -2px; width: 32px !important; height: 32px; /* adjust styles for IE 6/7 */ *top: -2px; *width: 32px !important; *height: 32px;
                       border: 2px solid #ccc;
 }
+/*.ui-combobox-toggle:hover { background: #d0d0d0 !important; }*/

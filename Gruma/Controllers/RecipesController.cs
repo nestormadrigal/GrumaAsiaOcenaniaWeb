@@ -20,6 +20,12 @@ namespace Gruma.Views.Recipes
             ViewBag.Message = "My mission foods";
             return View("MyMissionFoods");
         }
+
+        public ActionResult RecipeDetail()
+        {
+            ViewBag.Messsagee = "Recipe Detail";
+            return View();
+        }
        
     }
 }

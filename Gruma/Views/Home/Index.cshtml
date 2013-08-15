@@ -125,6 +125,7 @@
 
 <section class="summary-ctr">
     <fieldset>
+        <legend></legend>
         <article class="summary news-home">
             <div class="summary-img">
                 <img src="Content/Images/healthy-tips-home.jpg"/>
@@ -158,12 +159,13 @@
             <div class="fb-like-box" data-href="https://www.facebook.com/pages/Mission-Foods/195539173816673?fref=ts" data-width="282" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>            
             <div id="fb-root"></div>
             <script>(function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
         </div>
     </fieldset>
 </section>
@@ -175,3 +177,8 @@
     <div id="shadow-mymission"></div>
 </section>*@
 
+@*<script type="text/javascript">
+    $(document).ready(function () {
+        Home.Index.Init();
+    });
+</script>*@

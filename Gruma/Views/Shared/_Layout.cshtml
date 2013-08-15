@@ -7,6 +7,7 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'/>
         <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'/>
         <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/themes/base/css")
         @Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")
         <link href="/Content/Styles/1024x768.css" rel="stylesheet" media="screen and (max-width: 1220px)" />         
@@ -24,21 +25,14 @@
             </div>
             <div class="header-logo">
                 <a href="Home">
-                    <img src="Content/Images/logo.png"/>
+                    <img src="~/Content/Images/logo.png"/>
                 </a>
             </div>
             <div class="header-right">
                 <label>Search:</label>
                 <input type="text" />
-                <span class="submit"></span>
-               @* <div class="languaje dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Languaje</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="1">English</a></li>
-                    <li><a href="2">Spanish</a></li>
-                  </ul>
-                </div>*@
-                <select class="language" name="">
+                <span class="submit"></span>              
+                <select class="language" name="languaje">
                     <option>English</option>
                     <option>Spanish</option>
                 </select>
@@ -79,7 +73,7 @@
         </div>
         <footer>
             <div class="footer-content">
-                <a href="#"><img src="Content/Images/footer-logo.png" alt="Mission Food"/></a>
+                <a href="#"><img src="~/Content/Images/footer-logo.png" alt="Mission Food"/></a>
                 <nav>
                     <a href="#">RECIPES</a>
                     <a href="#">HEALTHY TIPS</a>
@@ -99,6 +93,7 @@
         </footer>
 
         @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryui")
         @Scripts.Render("~/bundles/plugins")
         @Scripts.Render("~/bundles/scripts")
         @RenderSection("scripts", required: false)

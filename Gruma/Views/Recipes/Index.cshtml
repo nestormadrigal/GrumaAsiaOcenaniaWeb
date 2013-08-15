@@ -22,22 +22,124 @@
         </div>
     </section>
     <section id="recipe-finder">        
-
         <div class="container-fluid">
-          <div class="row-fluid">
+            <div class="row-fluid">
             <div class="span8">
-              @Html.Partial("MyMissionFoods")
+                @Html.Partial("MyMissionFoods")
+                <div class="recipe-results">
+                    <div>
+                        <h1>Recipe Results</h1>
+                        <p>Your search results for:  <span> Breakfast, Tortillas, Chapatti, 30 min</span></p>
+                    </div>
+                    <div class="results-gallery">
+                        <ul>
+                            <li class="food-result">
+                                <div id="result1" class="result-content">                                  
+                                    <img src="Content/Images/food-result1.jpg"/>
+                                    <div id="result1-descrip" class="descrip-result">
+                                        <div class="overlay"></div>
+                                        <p>1.-Pellentesque eu enim felis, non imperdiet nunc. Donec iaculis sagittis metus, in porttitor.</p>
+                                    </div>
+                                </div>
+                                <h3 class="name">Fresh Tortillas</h3>
+                            </li>
+                            <li class="food-result">
+                                <div id="result2" class="result-content">                                  
+                                    <img src="Content/Images/food-result.jpg"/>
+                                    <div id="result2-descrip" class="descrip-result">
+                                        <div class="overlay"></div>
+                                        <p>2.-Pellentesque eu enim felis, non imperdiet nunc. Donec iaculis sagittis metus, in porttitor.</p>
+                                    </div>
+                                </div>
+                                <h3 class="name">Meat and Veggies Breakfast</h3>
+                            </li>
+                            <li class="food-result">
+                                <div id="result3" class="result-content">                                  
+                                    <img src="Content/Images/food-result2.jpg"/>
+                                    <div id="result3-descrip" class="descrip-result">
+                                        <div class="overlay"></div>
+                                        <p>3.-Pellentesque eu enim felis, non imperdiet nunc. Donec iaculis sagittis metus, in porttitor.</p>
+                                    </div>
+                                </div>
+                                <h3 class="name">Fresh and Green</h3>
+                            </li>
+                            <li class="food-result">
+                                <div id="result4" class="result-content">                                  
+                                    <img src="Content/Images/food-result1.jpg"/>
+                                    <div id="result4-descrip" class="descrip-result">
+                                        <div class="overlay"></div>
+                                        <p>4.-Pellentesque eu enim felis, non imperdiet nunc. Donec iaculis sagittis metus, in porttitor.</p>
+                                    </div>
+                                </div>
+                                <h3 class="name">Fresh Tortillas</h3>
+                            </li>
+                            <li class="food-result">
+                                <div id="result5" class="result-content">                                  
+                                    <img src="Content/Images/food-result.jpg"/>
+                                    <div id="result5-descrip" class="descrip-result">
+                                        <div class="overlay"></div>
+                                        <p>5.-Pellentesque eu enim felis, non imperdiet nunc. Donec iaculis sagittis metus, in porttitor.</p>
+                                    </div>
+                                </div>
+                                <h3 class="name">Meat and Veggies Breakfast</h3>
+                            </li>
+                            <li class="food-result">
+                                <div id="result6" class="result-content">                                  
+                                    <img src="Content/Images/food-result2.jpg"/>
+                                    <div id="result6-descrip" class="descrip-result">
+                                        <div class="overlay"></div>
+                                        <p>6.-Pellentesque eu enim felis, non imperdiet nunc. Donec iaculis sagittis metus, in porttitor.</p>
+                                    </div>
+                                </div>
+                                <h3 class="name">Fresh and Green</h3>
+                            </li>
+                            <li class="food-result">
+                                <div id="result7" class="result-content">                                  
+                                    <img src="Content/Images/food-result1.jpg"/>
+                                    <div id="result7-descrip" class="descrip-result">
+                                        <div class="overlay"></div>
+                                        <p>7.-Pellentesque eu enim felis, non imperdiet nunc. Donec iaculis sagittis metus, in porttitor.</p>
+                                    </div>
+                                </div>
+                                <h3 class="name">Fresh Tortillas</h3>
+                            </li>
+                            <li class="food-result">
+                                <div id="result8" class="result-content">                                  
+                                    <img src="Content/Images/food-result.jpg"/>
+                                    <div id="result8-descrip" class="descrip-result">
+                                        <div class="overlay"></div>
+                                        <p>8.-Pellentesque eu enim felis, non imperdiet nunc. Donec iaculis sagittis metus, in porttitor.</p>
+                                    </div>
+                                </div>
+                                <h3 class="name">Meat and Veggies Breakfast</h3>
+                            </li>
+                            <li class="food-result">
+                                <div id="result9" class="result-content">                                  
+                                    <img src="Content/Images/food-result2.jpg"/>
+                                    <div id="result9-descrip" class="descrip-result">
+                                        <div class="overlay"></div>
+                                        <p>9.-Pellentesque eu enim felis, non imperdiet nunc. Donec iaculis sagittis metus, in porttitor.</p>
+                                    </div>
+                                </div>
+                                <h3 class="name">Fresh and Green</h3>
+                            </li>
+                            <li class="food-result">
+                                <div id="result10" class="result-content">                                  
+                                    <img src="Content/Images/food-result1.jpg"/>
+                                    <div id="result10-descrip" class="descrip-result">
+                                        <div class="overlay"></div>
+                                        <p>10.-Pellentesque eu enim felis, non imperdiet nunc. Donec iaculis sagittis metus, in porttitor.</p>
+                                    </div>
+                                </div>
+                                <h3 class="name">Fresh Tortillas</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="span4">
                 <h3>Try Our Favorites</h3>
-                <div id="ourFavorites" class="carousel slide" >
-                        
-                        @*<ol class="carousel-indicators">
-                            <li data-target="#ourFavorites" data-slide-to="0" class="active"></li>
-                            <li data-target="#ourFavorites" data-slide-to="1"></li>
-                            <li data-target="#ourFavorites" data-slide-to="2"></li>
-                        </ol>*@
-                        
+                <div id="ourFavorites" class="carousel slide" >                                              
                         <div class="carousel-inner">
                             <div class="active item"><img src="Content/Images/carrousel1.jpg"/>
                                 <h4>Cinco de Mayo</h4>
@@ -71,13 +173,16 @@
                             </ul>
                         </div>                      
                     </div>
+                </div>
             </div>
-          </div>
+            
         </div>
-
     </section>
 
-
-
-
 </section>
+
+@*<script type="text/javascript">
+    $(document).ready(function () {
+        Recipes.Index.Init();
+    });
+</script>*@
