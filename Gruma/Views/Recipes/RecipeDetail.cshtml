@@ -4,18 +4,19 @@
             <div class="row-fluid">
                 <div class="span12">
                     <h1>Fiesta Chicken and Black Bean Enchilada</h1>
-                    <div class="rating">
+                    <div class="rating-recipe-container">
                         <label>Rating:</label>
-                        <div id="get_calification_img">
+                        <div class="rating-recipe"></div>
+                        @*
                             <p>
                                 <img src="~/Content/Images/rating4.png"/>
                             </p>
-                        </div><!--set_calification-->
-                        <span class="fltLt">(287 Reviews)</span>
-                        <span class="fltLt">|</span>
-                        <a href="#" onclick="showLightbox('rate_recipe')" class="fltLt">Rate this Recipe</a>
-                        <span class="fltLt">|</span>
-                        <a href="#" onclick="showLightbox_scroll('reviews')" class="fltLt"> See Reviews</a>
+                        </div><!--set_calification-->*@
+                        <span>(287 Reviews)</span>
+                        <span>|</span>
+                        <a href="#" role="button" id="rateRecipeBtn" data-toggle="modal">Rate this Recipe</a>
+                        <span>|</span>
+                        <a href="#" role="button" id="seeReviewsBtn" data-toggle="modal"> See Reviews</a>
                     </div>
                 </div>
             </div>
@@ -55,40 +56,103 @@
                         </script>
                         
                     </div>
+                    <span class="separator"></span>
                     <div class="related">
-                                <h2>You May Also Enjoy</h2>
-                                <div class="row-fluid">
-                                    <div class="span5">
-                                        <img src="~/Content/Images/related3.jpg"/>
-                                    </div>
-                                    <div class="span6">
-                                        <p><a href="#">Fresh Tortillas</a></p>
-                                        <p><label>Rating:</label><img src="~/Content/Images/rating4.png"/>
-                                        <span>(287 Reviews)</span></p>
-                                    </div>
-                                </div><!--End .related-recipe-->
-                                <div class="row-fluid">
-                                    <div class="span5">
-                                        <img src="~/Content/Images/related1.jpg"/>
-                                    </div>
-                                    <div class="span6">
-                                        <p><a href="#">Fresh Tortillas</a></p>
-                                        <p><label>Rating:</label><img src="~/Content/Images/rating5.png"/></p>
-                                        <p><span>(287 Reviews)</span></p>
-                                    </div>
-                                </div><!--End .related-recipe-->
-                                <div class="row-fluid">
-                                    <div class="span5">
-                                        <img src="~/Content/Images/related2.jpg"/>
-                                    </div>
-                                    <div class="span6">
-                                        <p><a href="#">Fresh and Green</a></p>
-                                        <p><label>Rating:</label><img src="~/Content/Images/rating3.png"/></p>
-                                        <p><span>(287 Reviews)</span></p>
-                                    </div>
-                                </div><!--End .related-recipe-->
-                            </div><!--End .related-->
+                        <h2>You May Also Enjoy</h2>
+                        <div class="row-fluid">
+                            <div class="span5">
+                                <img src="~/Content/Images/related3.jpg"/>
+                            </div>
+                            <div class="span6">
+                                <p><a href="#">Fresh Tortillas</a></p>
+                                <p><label>Rating:</label></p><div class="rating-recipe-related"></div>
+                                <p><span>(287 Reviews)</span></p>
+                            </div>
+                        </div><!--End .related-recipe-->
+                        <div class="row-fluid">
+                            <div class="span5">
+                                <img src="~/Content/Images/related1.jpg"/>
+                            </div>
+                            <div class="span6">
+                                <p><a href="#">Fresh Tortillas</a></p>
+                                <p><label>Rating:</label></p><div class="rating-recipe-related"></div>
+                                <p><span>(287 Reviews)</span></p>
+                            </div>
+                        </div><!--End .related-recipe-->
+                        <div class="row-fluid">
+                            <div class="span5">
+                                <img src="~/Content/Images/related2.jpg"/>
+                            </div>
+                            <div class="span6">
+                                <p><a href="#">Fresh Tortillas</a></p>
+                                <p><label>Rating:</label></p><div class="rating-recipe-related"></div>
+                                <p><span>(287 Reviews)</span></p>
+                            </div>
+                        </div><!--End .related-recipe-->
+                    </div>
+                    <!--End .related-->                
+            </div>
+            <div class="span6">
+                <div class="features">
+                    <span></span>
+                    <p>
+                        <label>Serves: </label>
+                        <span>6 people (1-cup servings).</span>
+                    </p>
+                    <p>
+                        <label>Prep Time: </label>
+                        <span> 10 minutes</span>
+                    </p>
+                    <p>
+                        <label>Cook Time: </label>
+                        <span>8 hours on LOW or 4 hours on HIGH plus 20 minutes on HIGH</span>
+                    </p>
                 </div>
+                <div class="ingredients">
+                    <span></span>
+                    <h3>Ingredients</h3>
+                    <p>- - - - - - - - -</p>
+                    <ul>
+                        <li>8 Mission&reg; Life Balance&reg; Flour Tortillas</li>
+                        <li>Cooking Spray</li>
+                        <li>1/4 cup chicken broth</li>
+                        <li>1 skinless, boneless chicken breast <br/>(approximately 1 pound)</li>
+                        <li>1 medium onion, diced (approximately 1 1 /2 cup)</li>
+                        <li>1 red pepper, stemmed, seeded, and diced</li>
+                        <li>1 can black beans, drained and rinsed</li>
+                        <li>1 cup corn kernels</li>
+                        <li>1/4 cup packed chopped fresh cilantro</li>
+                        <li>1 can diced green chilies (4 ounces)</li>
+                        <li>2 cups + 1/4 cup low-fat sharp cheddar cheese, grated</li>
+                        <li>2/3 cup fat-free sour cream</li>
+                        <li>2/3 can red Enchilada sauce</li>
+                        <li>Tabasco, Salt, Pepper to taste</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <span></span>
+                    <h3>Instructions</h3>
+                    <p>- - - - - - - - -</p>
+                    <ul>
+                        <li><span>1.</span> <p>Heat oven to 350 degrees F. Spray an 8"x11"x2" baking dish with cooking spray.</p></li>
+                        <li><span>2.</span> <p>Pour chicken broth into a small frying pan, heat to simmer, add chicken breast, cover and simmer until no longer pink, turning once (approximately 25 minutes). Cool and shred.</p></li>
+                        <li><span>3.</span> <p> In same frying pan, add onions and red pepper. Saute over medium heat until soft, approximately 5 minutes. Remove from heat.</p></li>
+                        <li><span>4.</span> <p>In a large bowl, place chicken, onion-pepper mixture, beans, corn, cilantro, chilies, 2 cups of the cheese, and sour cream. Toss until thoroughly blended. Add tabasco, salt and pepper to taste.</p></li>
+                        <li><span>5.</span> <p> Place 1/8 of mixture into center of each tortilla, roll and place in baking dish. When all 8 rolls are completed, pour Enchilada sauce over top and sprinkle with remaining 1/4 cup cheese. Bake for 35 minutes, or until sauce bubbles and enchiladas are heated through. Makes 4 generous servings of 2 enchiladas each.</p></li>
+
+                    </ul>
+                </div>
+                <div class="tabs-container">
+                    <ul class="nav nav-tabs" id="tabs">
+                       <li class="active"><a href="#tab-1">Tips</a></li>
+                       <li><a href="#tab-2">Nutritional Information</a></li>
+                    </ul>
+ 
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="tab-1"><p>Slow Cooker Tip: For best results, do not remove cover during cooking.</p></div>
+                      <div class="tab-pane" id="tab-2"><p>Content-2</p></div>                  
+                    </div>
+               </div>
             </div>
             <!------ End toolkit ----->
             <div class="row-fluid">

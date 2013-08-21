@@ -3,7 +3,7 @@
 /*GENERAL RULES*/
 *{ border: none; font-family: 'Lato', sans-serif; font-size: 1em; margin: 0; outline: none; padding: 0; behavior: url(styles/PIE.htc); }
 h1{ font-size: 2em; text-align: center; }
-h2{ font-size: 1.2em; }
+h2{ font-size: 24px;}
 a{ text-decoration: none; }
 ul li { display: inline-block; }
 ul li a:hover,
@@ -253,14 +253,14 @@ section.recipes #recipe-finder .row-fluid .span4 .most-populars li a:hover { tex
 #recipe-detail .row-fluid a { color: #ff6900; font-weight: 400; font-size: 15px; }
 #recipe-detail .row-fluid { width: 50%; margin: 0px auto; }
 #recipe-detail .row-fluid .span12 > h1 { text-align: left; color: #0097c9;  font-weight: 700; font-size: 34px; margin: 0 0 15px 0; }
-#recipe-detail .row-fluid .span12 p { color: #444444; font-weight: 300; font-size: 19px; margin: 15px 0 0; }
+#recipe-detail .row-fluid .span12 p { color: #444444; font-weight: 300; font-size: 19px; margin: 15px 0 0; line-height: 22px; }
 #recipe-detail .row-fluid .span12 .rating > * { float: left; }
 /*Recipe ToolKit*/
-#recipe-detail .row-fluid.recipe-toolkit > .span6 { position: relative; width: auto; margin: 40px auto; border: 1px solid #e2e2e2;background-color: #ffffff; padding-bottom: 15px; }
+#recipe-detail .row-fluid.recipe-toolkit > .span6 { position: relative; width: auto; margin: 40px auto; /*border: 1px solid #e2e2e2;*/ background-color: #ffffff; padding-bottom: 15px; }
 #recipe-detail .row-fluid.recipe-toolkit > .span6 div > img { position: relative; padding: 2px; border-bottom: 1px solid #7e7e7e; -webkit-box-shadow: #4c4a48 0px 4px 3px -2px; box-shadow: #4c4a48 0px 4px 3px -2px; }
 #recipe-detail .row-fluid.recipe-toolkit .span6 h3 { margin: 15px 0 15px 20px; color: #ff4800; font-weight: 700; font-size: 24px; }
 #recipe-detail .row-fluid.recipe-toolkit .span6 ul { margin: 0 0 0 46px; position: relative; }
-#recipe-detail .row-fluid.recipe-toolkit .span6 ul li { display: block; margin: 0 0 5px; padding: 5px 0 5px 30px; background: left center no-repeat; }
+#recipe-detail .row-fluid.recipe-toolkit .span6 ul li { display: block; margin: 0px 0px 5px; padding: 5px 0 5px 30px; background: left center no-repeat; }
 #recipe-detail .row-fluid.recipe-toolkit .span6 ul li a { margin-right: 5px; font-size: 15px; }
 #recipe-detail .row-fluid.recipe-toolkit .span6 ul li.icn-print { background-image: url("../Images/print.png"); }
 #recipe-detail .row-fluid.recipe-toolkit .span6 ul li.icn-email { background-image: url("../Images/email.png"); }
@@ -268,11 +268,17 @@ section.recipes #recipe-finder .row-fluid .span4 .most-populars li a:hover { tex
 #recipe-detail .row-fluid.recipe-toolkit .span6 ul li.icn-share { background-image: url("../Images/share.png"); }
 #recipe-detail .row-fluid.recipe-toolkit .span6 .fb_iframe_widget { margin: 0px 0px 0px 46px; }
 /*Recipe Related*/
+#recipe-detail .separator { display: block; background: #FCFCFC; width: 100%; height: 15px; }
+#recipe-detail .row-fluid.recipe-toolkit .span6 > div { border: 1px solid #e2e2e2; }
+#recipe-detail .row-fluid.recipe-toolkit .span6 .related { border: 1px solid #e2e2e2; border-top: 0px none; padding: 20px 0px; }
 #recipe-detail .row-fluid.recipe-toolkit .span6 .related .row-fluid { width: 90%; margin: 20px auto; }
 #recipe-detail .row-fluid.recipe-toolkit .span6 .related .row-fluid div > img { position: relative; padding: 2px; border-bottom: 1px solid #7e7e7e; -webkit-box-shadow: #e9e9e9 0px 3px 3px 0px; box-shadow: #e9e9e9 0px 3px 3px 0px; }
 #recipe-detail .row-fluid.recipe-toolkit .span6 .related .row-fluid .span6 p span { display: block; }
 
-
+/*Features*/
+#recipe-detail .row-fluid.recipe-toolkit .span6
+#recipe-detail .row-fluid.recipe-toolkit .span6 .features { margin: 0px 0px 0px 20px; background: url("../Images/features.png") left top no-repeat; border: 0px none; padding: 0 0 0 60px; }
+#recipe-detail .row-fluid.recipe-toolkit .span6 .features p span { display: inline-block; width: 200px; margin: 0px 0px 0px 5px; color: #04768a; }
 
 #container .container_content .recipe .content-recipe{
     height: 314px;

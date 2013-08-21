@@ -7,7 +7,7 @@ var Recipes = Recipes || {};
     
     Recipes.Index = function () {
         function init () {
-            _view = $('#recipe-detail');
+            _view = $('.recipes');
             initControls();  
             initEvents();
             

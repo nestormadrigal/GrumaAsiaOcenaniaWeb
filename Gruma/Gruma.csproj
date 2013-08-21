@@ -163,6 +163,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -210,6 +211,8 @@
     <Content Include="Content\Images\bullet-slider.png" />
     <Content Include="Content\Images\bullet-time-line.png" />
     <Content Include="Content\Images\buy.jpg" />
+    <Content Include="Content\Images\cancel-off.png" />
+    <Content Include="Content\Images\cancel-on.png" />
     <Content Include="Content\Images\careers-main.jpg" />
     <Content Include="Content\Images\carrousel1.jpg" />
     <Content Include="Content\Images\carrousel2.jpg" />
@@ -297,6 +300,11 @@
     <Content Include="Content\Images\save.png" />
     <Content Include="Content\Images\search-button.png" />
     <Content Include="Content\Images\share.png" />
+    <Content Include="Content\Images\star-half.png" />
+    <Content Include="Content\Images\star-off.png" />
+    <Content Include="Content\Images\star-on.png" />
+    <Content Include="Content\Images\starOff.png" />
+    <Content Include="Content\Images\starOn.png" />
     <Content Include="Content\Images\sustainability.jpg" />
     <Content Include="Content\Images\time-line1.jpg" />
     <Content Include="Content\Images\tip1.jpg" />
@@ -420,9 +428,15 @@
     <Content Include="Scripts\Plugins\jquery.mCustomScrollbar.js" />
     <Content Include="Scripts\Plugins\jquery.mousewheel.js" />
     <Content Include="Scripts\jquery.ui.selectmenu.js" />
+    <Content Include="Scripts\Plugins\jquery.raty.js" />
+    <Content Include="Scripts\Plugins\jquery.raty.min.js" />
     <Content Include="Scripts\Plugins\selectmenu.js" />
     <Content Include="Scripts\Plugins\slides.min.jquery.js" />
+    <Content Include="Scripts\Products\Index.js" />
+    <Content Include="Scripts\Recipes\SeeRatingReviews.js" />
+    <Content Include="Scripts\Recipes\RateRecipe.js" />
     <Content Include="Scripts\Recipes\Index.js" />
+    <Content Include="Scripts\Recipes\RecipeDetail.js" />
     <Content Include="Scripts\Shared\MyMissionFoods.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -466,6 +480,9 @@
     <Content Include="Views\Shared\MyMissionFoods.cshtml" />
     <Content Include="Views\Recipes\Index.cshtml" />
     <Content Include="Views\Recipes\RecipeDetail.cshtml" />
+    <Content Include="Views\Recipes\RateRecipe.cshtml" />
+    <Content Include="Views\Recipes\SeeRatingReviews.cshtml" />
+    <Content Include="Views\Products\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -26,6 +26,17 @@ namespace Gruma.Views.Recipes
             ViewBag.Messsagee = "Recipe Detail";
             return View();
         }
-       
+
+        public ActionResult RateRecipe()
+        {
+            ViewBag.Messsagee = "Rate Recipe";
+            return PartialView("RateRecipe");
+        }
+
+        public ActionResult SeeRatingReviews()
+        {
+            ViewBag.Messsagee = "See Rating Reviews";
+            return PartialView("SeeRatingReviews");
+        }
     }
 }

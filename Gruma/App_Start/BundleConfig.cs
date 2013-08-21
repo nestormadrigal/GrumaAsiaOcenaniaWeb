@@ -22,19 +22,25 @@ namespace Gruma
                        "~/Scripts/Plugins/slides.min.jquery.js",                       
                        "~/Scripts/Bootstrap/bootstrap-dropdown.js",
                        "~/Scripts/Bootstrap/bootstrap-carousel.js",
+                       "~/Scripts/Bootstrap/bootstrap-modal.js",
                        "~/Scripts/Plugins/jquery.mCustomScrollbar.js",
                        "~/Scripts/Plugins/jquery.mousewheel.js",
                        "~/Scripts/Plugins/jquery-jcarousel.js",
                        "~/Scripts/Plugins/jquery-jcarousel.min.js",
-                       "~/Scripts/Plugins/selectmenu.js"));
+                       "~/Scripts/Plugins/jquery.raty.js",
+                       "~/Scripts/Plugins/selectmenu.js",
+                       "~/Scripts/Bootstrap/bootstrap-tab.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                        "~/Scripts/Bootstrap/bootstrap.js",        
-                        "~/Scripts/Bootstrap/bootstrap-dropdown.js"));
+            //bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+            //            "~/Scripts/Bootstrap/bootstrap.js",        
+            //            "~/Scripts/Bootstrap/bootstrap-dropdown.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/scripts").Include(
                        "~/Scripts/Home/Index.js",
                        "~/Scripts/Recipes/Index.js",
+                       "~/Scripts/Recipes/RecipeDetail.js",
+                       "~/Scripts/Recipes/RateRecipe.js",
+                       "~/Scripts/Recipes/SeeRatingReviews.js",
                        "~/Scripts/Shared/MyMissionFoods.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
